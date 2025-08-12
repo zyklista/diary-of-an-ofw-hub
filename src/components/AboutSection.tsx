@@ -25,16 +25,6 @@ const AboutSection = () => {
               their businesses abroad.
             </p>
             
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Stories Shared</div>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-primary">15+</div>
-                <div className="text-sm text-muted-foreground">EU Countries</div>
-              </div>
-            </div>
           </div>
           
           <div className="grid grid-cols-2 gap-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>

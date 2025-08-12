@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Youtube, Mic, Mail, MapPin, Phone } from "lucide-react";
+import { Youtube, Mic, Mail, MapPin, Phone, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,14 +14,30 @@ const Footer = () => {
               Connecting and empowering Filipino overseas workers across Europe through 
               stories, insights, and digital solutions.
             </p>
-            <div className="flex space-x-4">
-              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10">
-                <Youtube className="h-4 w-4 mr-2" />
-                YouTube
+            <div className="flex flex-wrap gap-3">
+              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
+                <a href="https://www.facebook.com/diaryofanofw" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-4 w-4 mr-2" />
+                  Facebook
+                </a>
               </Button>
-              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10">
-                <Mic className="h-4 w-4 mr-2" />
-                Podcast
+              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
+                <a href="https://instagram.com/diary_of_an_ofw" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-4 w-4 mr-2" />
+                  Instagram
+                </a>
+              </Button>
+              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
+                <a href="https://youtube.com/%40diaryofanofw%3Fsi%3DkQW85veqiwAgd7cn" target="_blank" rel="noopener noreferrer">
+                  <Youtube className="h-4 w-4 mr-2" />
+                  YouTube
+                </a>
+              </Button>
+              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
+                <a href="https://open.spotify.com/show/5oJDj8gVSPa87Mds6Oe9ty" target="_blank" rel="noopener noreferrer">
+                  <Mic className="h-4 w-4 mr-2" />
+                  Spotify
+                </a>
               </Button>
             </div>
           </div>
@@ -43,15 +59,19 @@ const Footer = () => {
             <ul className="space-y-3 text-secondary-foreground/80">
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                <span className="text-sm">hello@diaryofanofw.com</span>
+                <a href="mailto:ask@diaryofanofw.com" className="text-sm hover:text-white transition-colors">
+                  ask@diaryofanofw.com
+                </a>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span className="text-sm">Europe-wide</span>
+                <span className="text-sm">Jihlava, Czechia 586 01</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <span className="text-sm">Available via video call</span>
+                <a href="tel:+420774900384" className="text-sm hover:text-white transition-colors">
+                  +420 774 900 384
+                </a>
               </li>
             </ul>
           </div>

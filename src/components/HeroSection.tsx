@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import heroImage from "@/assets/ofw-business-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -32,20 +33,13 @@ const HeroSection = () => {
         </div>
         
         <div className="mt-16 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <p className="text-sm opacity-70 mb-4">Trusted by OFWs across Europe</p>
-          <div className="flex justify-center items-center space-x-8 opacity-60">
-            <div className="text-center">
-              <div className="text-2xl font-bold">500+</div>
-              <div className="text-sm">Interviews</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold">50K+</div>
-              <div className="text-sm">Listeners</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold">15+</div>
-              <div className="text-sm">Countries</div>
-            </div>
+          <div className="relative max-w-4xl mx-auto">
+            <img 
+              src={heroImage} 
+              alt="Filipino overseas workers using digital technology for business growth in Europe"
+              className="rounded-2xl shadow-2xl w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
           </div>
         </div>
       </div>
