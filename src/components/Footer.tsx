@@ -15,28 +15,24 @@ const Footer = () => {
               stories, insights, and digital solutions.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
-                <a href="https://www.facebook.com/diaryofanofw" target="_blank" rel="noopener noreferrer">
-                  <Facebook className="h-4 w-4 mr-2" />
-                  Facebook
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:scale-110 transition-all duration-300" asChild>
+                <a href="https://www.facebook.com/diaryofanofw" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <Facebook className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
-                <a href="https://instagram.com/diary_of_an_ofw" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="h-4 w-4 mr-2" />
-                  Instagram
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:scale-110 transition-all duration-300" asChild>
+                <a href="https://instagram.com/diary_of_an_ofw" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <Instagram className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
-                <a href="https://youtube.com/%40diaryofanofw%3Fsi%3DkQW85veqiwAgd7cn" target="_blank" rel="noopener noreferrer">
-                  <Youtube className="h-4 w-4 mr-2" />
-                  YouTube
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:scale-110 transition-all duration-300" asChild>
+                <a href="https://youtube.com/%40diaryofanofw%3Fsi%3DkQW85veqiwAgd7cn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                  <Youtube className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10" asChild>
-                <a href="https://open.spotify.com/show/5oJDj8gVSPa87Mds6Oe9ty" target="_blank" rel="noopener noreferrer">
-                  <Mic className="h-4 w-4 mr-2" />
-                  Spotify
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:scale-110 transition-all duration-300" asChild>
+                <a href="https://open.spotify.com/show/5oJDj8gVSPa87Mds6Oe9ty" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                  <Mic className="h-5 w-5" />
                 </a>
               </Button>
             </div>
@@ -46,10 +42,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-secondary-foreground/80">
-              <li><a href="#services" className="animated-underline hover:text-white transition-colors">Services</a></li>
-              <li><a href="#about" className="animated-underline hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#screening" className="animated-underline hover:text-white transition-colors">Get Started</a></li>
-              <li><a href="#" className="animated-underline hover:text-white transition-colors">Blog</a></li>
+              <li><a href="/services" className="animated-underline hover:text-white transition-colors">Services</a></li>
+              <li><a href="/about" className="animated-underline hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/get-started" className="animated-underline hover:text-white transition-colors">Get Started</a></li>
             </ul>
           </div>
           

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
-import heroImage from "@/assets/ofw-business-hero.jpg";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/ofw-digital-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -22,13 +22,17 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          <Button className="btn-hero group">
-            Get Interviewed
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <Button className="btn-hero group" asChild>
+            <a href="#screening">
+              Get Interviewed
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 py-4 px-8 rounded-xl">
-            <Play className="mr-2 h-5 w-5" />
-            Watch Our Content
+          <Button className="btn-hero group" asChild>
+            <a href="https://youtube.com/%40diaryofanofw%3Fsi%3DkQW85veqiwAgd7cn" target="_blank" rel="noopener noreferrer">
+              Watch Our Content
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
         
@@ -36,8 +40,8 @@ const HeroSection = () => {
           <div className="relative max-w-4xl mx-auto">
             <img 
               src={heroImage} 
-              alt="Filipino overseas workers using digital technology for business growth in Europe"
-              className="rounded-2xl shadow-2xl w-full h-64 md:h-80 object-cover"
+              alt="Modern digital illustration of Filipino overseas worker using technology for business growth"
+              className="rounded-2xl shadow-2xl w-full h-64 md:h-80 object-cover animate-float"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
           </div>
