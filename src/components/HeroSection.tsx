@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-silver bg-clip-text text-transparent">Diary of an</span> <span className="text-accent-foreground">OFW</span>
+            Diary of an <span className="text-accent-foreground">OFW</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Empowering Filipino overseas workers in Europe through stories, insights, and digital solutions

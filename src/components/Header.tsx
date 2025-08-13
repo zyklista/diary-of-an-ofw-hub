@@ -37,7 +37,7 @@ const Header = () => {
           <a href="/" className="flex-shrink-0">
             <div className="relative">
               <div className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                Home
+                Diary of an OFW
               </div>
               <div className="absolute inset-0 bg-gradient-primary opacity-10 blur-sm rounded-lg transform scale-110"></div>
             </div>

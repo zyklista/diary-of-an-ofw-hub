@@ -50,7 +50,7 @@ const Footer = () => {
           
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 bg-gradient-silver bg-clip-text text-transparent">How can we help you</h4>
+            <h4 className="text-lg font-semibold mb-4">How can we help you</h4>
             <ul className="space-y-3 text-secondary-foreground/80">
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />

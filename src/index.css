@@ -8,25 +8,25 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 30% 96%;
-    --foreground: 225 15% 15%;
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 225 15% 15%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 225 15% 15%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Pastel blue gradient system for OFW brand */
+    /* Dark theme with blue accents */
     --primary: 220 60% 65%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 220 50% 75%;
 
-    --secondary: 225 40% 80%;
-    --secondary-foreground: 225 30% 20%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 210 30% 94%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
 
     --accent: 200 50% 70%;
     --accent-foreground: 0 0% 100%;
@@ -34,17 +34,16 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
     --ring: 220 60% 65%;
 
-    /* Design system tokens - Pastel Blue Gradients */
+    /* Design system tokens - Dark Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(220 60% 65%), hsl(200 50% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(225 40% 80%), hsl(220 60% 65%), hsl(200 50% 70%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
-    --gradient-silver: linear-gradient(135deg, hsl(0 0% 75%), hsl(0 0% 85%));
-    --shadow-elegant: 0 10px 30px -10px hsl(220 60% 65% / 0.15);
-    --shadow-glow: 0 0 40px hsl(220 50% 75% / 0.2);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 15%), hsl(220 30% 20%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 12%), hsl(0 0% 18%));
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(220 50% 75% / 0.3);
 
     --radius: 0.5rem;
 
@@ -247,9 +246,5 @@ All colors MUST be HSL.
 
   .bg-gradient-card {
     background: var(--gradient-card);
-  }
-
-  .bg-gradient-silver {
-    background: var(--gradient-silver);
   }
 }

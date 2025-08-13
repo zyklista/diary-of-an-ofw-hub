@@ -45,10 +45,10 @@ const ScreeningForm = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-silver bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Let's understand where you at right now
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -60,7 +60,7 @@ const ScreeningForm = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="card-elegant">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl bg-gradient-silver bg-clip-text text-transparent">Let's understand where you at right now</CardTitle>
+              <CardTitle className="text-2xl">Let's understand where you at right now</CardTitle>
               <CardDescription>
                 Just like a doctor's consultation, we need to understand your situation first
               </CardDescription>
