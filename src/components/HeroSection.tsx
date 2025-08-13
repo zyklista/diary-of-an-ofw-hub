@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/ofw-digital-hero.jpg";
+import heroImage from "@/assets/ofw-professional-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Diary of an <span className="text-accent-foreground">OFW</span>
+            <span className="bg-gradient-silver bg-clip-text text-transparent">Diary of an</span> <span className="text-accent-foreground">OFW</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Empowering Filipino overseas workers in Europe through stories, insights, and digital solutions
@@ -40,8 +40,8 @@ const HeroSection = () => {
           <div className="relative max-w-4xl mx-auto">
             <img 
               src={heroImage} 
-              alt="Modern digital illustration of Filipino overseas worker using technology for business growth"
-              className="rounded-2xl shadow-2xl w-full h-64 md:h-80 object-cover animate-float"
+              alt="Professional podcast and video production tools for Filipino content creators"
+              className="rounded-2xl shadow-elegant w-full h-64 md:h-80 object-cover animate-float"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
           </div>

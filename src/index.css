@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 30% 96%;
     --foreground: 225 15% 15%;
 
     --card: 0 0% 100%;
@@ -17,18 +17,18 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 225 15% 15%;
 
-    /* Dark blue gradient system for OFW brand */
-    --primary: 220 100% 25%;
+    /* Pastel blue gradient system for OFW brand */
+    --primary: 220 60% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 220 100% 35%;
+    --primary-glow: 220 50% 75%;
 
-    --secondary: 225 100% 15%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 225 40% 80%;
+    --secondary-foreground: 225 30% 20%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 30% 94%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 200 100% 30%;
+    --accent: 200 50% 70%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,14 +36,15 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 250 84% 54%;
+    --ring: 220 60% 65%;
 
-    /* Design system tokens - Dark Blue Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 100% 25%), hsl(200 100% 30%));
-    --gradient-hero: linear-gradient(135deg, hsl(225 100% 15%), hsl(220 100% 25%), hsl(200 100% 30%));
+    /* Design system tokens - Pastel Blue Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 60% 65%), hsl(200 50% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(225 40% 80%), hsl(220 60% 65%), hsl(200 50% 70%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
-    --shadow-elegant: 0 10px 30px -10px hsl(220 100% 25% / 0.3);
-    --shadow-glow: 0 0 40px hsl(220 100% 35% / 0.4);
+    --gradient-silver: linear-gradient(135deg, hsl(0 0% 75%), hsl(0 0% 85%));
+    --shadow-elegant: 0 10px 30px -10px hsl(220 60% 65% / 0.15);
+    --shadow-glow: 0 0 40px hsl(220 50% 75% / 0.2);
 
     --radius: 0.5rem;
 
@@ -154,8 +155,8 @@ All colors MUST be HSL.
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(250 84% 54% / 0.3); }
-    50% { box-shadow: 0 0 40px hsl(250 84% 54% / 0.6); }
+    0%, 100% { box-shadow: 0 0 20px hsl(220 60% 65% / 0.2); }
+    50% { box-shadow: 0 0 40px hsl(220 50% 75% / 0.3); }
   }
 
   @keyframes fade-in-up {
@@ -199,11 +200,11 @@ All colors MUST be HSL.
   @keyframes rotate-glow {
     from {
       transform: rotate(0deg);
-      box-shadow: 0 0 20px hsl(220 100% 25% / 0.3);
+      box-shadow: 0 0 20px hsl(220 60% 65% / 0.2);
     }
     to {
       transform: rotate(360deg);
-      box-shadow: 0 0 40px hsl(220 100% 25% / 0.6);
+      box-shadow: 0 0 40px hsl(220 50% 75% / 0.3);
     }
   }
 
@@ -246,5 +247,9 @@ All colors MUST be HSL.
 
   .bg-gradient-card {
     background: var(--gradient-card);
+  }
+
+  .bg-gradient-silver {
+    background: var(--gradient-silver);
   }
 }

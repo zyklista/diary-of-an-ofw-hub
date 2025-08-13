@@ -48,8 +48,8 @@ const ScreeningForm = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Let's <span className="text-gradient">Connect</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-silver bg-clip-text text-transparent">
+            Let's understand where you at right now
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Complete our screening questionnaire so we can understand your needs and determine 
@@ -60,7 +60,7 @@ const ScreeningForm = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="card-elegant">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl text-gradient">Business Screening Form</CardTitle>
+              <CardTitle className="text-2xl bg-gradient-silver bg-clip-text text-transparent">Let's understand where you at right now</CardTitle>
               <CardDescription>
                 Just like a doctor's consultation, we need to understand your situation first
               </CardDescription>
@@ -208,9 +208,10 @@ const ScreeningForm = () => {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="asap">As soon as possible</SelectItem>
+                        <SelectItem value="72hrs">Within 72 hours</SelectItem>
+                        <SelectItem value="1week">Within 1 week</SelectItem>
                         <SelectItem value="1month">Within 1 month</SelectItem>
                         <SelectItem value="3months">Within 3 months</SelectItem>
-                        <SelectItem value="6months">Within 6 months</SelectItem>
                         <SelectItem value="flexible">I'm flexible</SelectItem>
                       </SelectContent>
                     </Select>
@@ -243,7 +244,7 @@ const ScreeningForm = () => {
                     <div>
                       <h4 className="font-semibold mb-2">What happens next?</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• We'll review your application within 24 hours</li>
+                        <li>• We'll review your application within 72 hours</li>
                         <li>• If we're a good fit, we'll schedule a free consultation call</li>
                         <li>• We'll create a customized proposal for your needs</li>
                         <li>• You might also be invited for a podcast interview!</li>
